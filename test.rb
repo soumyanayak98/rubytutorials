@@ -12,11 +12,3 @@ puts phrase[0..2]
 puts phrase.index("t")
 
 
-
-
-
-
-
-
-
-#operators
