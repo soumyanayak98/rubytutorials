@@ -3,9 +3,9 @@ range=0..9
 range1 = (0..5).to_a # converting range to a list using to_a method
 range2 = ('aa'..'ae').to_a
 
-# puts "#{range}"
-# puts "#{range1}"
-# puts "#{range2}"
+puts "#{range}"
+puts "#{range1}"
+puts "#{range2}"
 
 print "range is: "
 range.each do |i|
@@ -24,8 +24,8 @@ set = range.select{|i| i<5}
 puts "selected items are #{set}"
 
 #reverse range
-rev= range.to_a.reverse 
-puts "#{rev}"
+$rev= range.to_a.reverse #global variable
+puts "#$rev"
 
 #as condition
 score=70
