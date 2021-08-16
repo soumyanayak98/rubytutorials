@@ -1,5 +1,4 @@
 ismale = true
-
 if ismale
     puts "you are male"
 else

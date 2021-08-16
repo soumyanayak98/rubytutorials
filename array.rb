@@ -1,12 +1,7 @@
 friends = Array["john","kevin","oscar", "jean", "scott"]
-puts friends.length
 
 puts friends[0]
 puts "#{friends}"
-
-# puts "#{friends.reverse()}"
-# puts "#{friends.sort()}"
-
 
 name = Array.new(4,'mac')
 puts "#{name}"
@@ -19,3 +14,11 @@ puts "#{digits}"
 
 alpha = Array("a"..."z")
 puts "#{alpha}"
+puts "------------------------------------------------"
+
+
+friends << "scarlet" #append using shovel
+p friends
+
+# puts "hi #{friends.sample}"
+p %w(my name is soumya)

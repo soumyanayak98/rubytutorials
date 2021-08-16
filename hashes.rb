@@ -1,17 +1,17 @@
-hash ={
-    [1,"jan"] => "january",
-    "arr" => [1,2,3]
-}
+my_details = {'name' => 'soumya', 'favcolor' => 'violet'}
+myhash = {a: 1, b: 2, c: 3, d: 4} #here keys are symbols
+# p myhash
+# p my_details
+puts myhash[:a]
+p myhash.keys  # returns only keys
 
-hash.each do |k,v|
-    puts "#{k} is #{v}"
-end
+# myhash.each do |key, value|
+#     puts "the class of key: #{key.class}"
+#     puts "the class of value: #{value.class}"
+# end
+p myhash[:a].is_a?(Integer)
+myhash[:e]= "soumya"
+puts myhash.select { |key, value| value.is_a?(String) }
 
-puts hash["arr"].at(1)
-
-
-states= {
-    :BBSR => "Bhubaneswar"
-}
-
-puts states[:BBSR]
+# myhash.each { |k,v| myhash.delete(k) if v.is_a?(String)  }
+p myhash.has_key?(:e)  # include? or key? or member?
